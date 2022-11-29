@@ -5,6 +5,7 @@ import Route from "./components/Route";
 import Sidebar from "./components/SideBar";
 import ButtonPage from "./pages/ButtonPage";
 import DropdownPage from "./pages/DropdownPage";
+import ModalPage from "./pages/ModalPage";
 
 const App = () => {
 
@@ -20,6 +21,9 @@ const App = () => {
                 </Route>
                 <Route path={'/buttons'}>
                     <ButtonPage />
+                </Route>
+                <Route path={'/modal'}>
+                    <ModalPage />
                 </Route>
             </div>
         </div>
