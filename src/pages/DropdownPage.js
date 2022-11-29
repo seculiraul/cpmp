@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Dropdown from "./components/Dropdown";
+import Dropdown from "../components/Dropdown";
+
 
 const DropdownPage = () => {
 
@@ -25,7 +26,6 @@ const DropdownPage = () => {
 
     ]
     return (
-
         <Dropdown value={selection} onChange={handleSelect} options={options}/>
     )
 }

@@ -4,13 +4,10 @@ import { GoBell, GoDatabase, GoClock } from 'react-icons/go';
 
 const ButtonPage = () => {
 
-    const onClick = () => {
-        console.log('hi')
-    }
     return (
         <div>
             <div>
-                <Button success primary outline rounded onClick={onClick}>
+                <Button success primary outline rounded >
                     <GoBell />
                     click here
                 </Button>
