@@ -1,4 +1,5 @@
-import Table from "../components/Table"
+import SortableTable from "../components/SortableTable"
+//import Table from "../components/Table"
 
 const TablePage = () => {
 
@@ -12,7 +13,8 @@ const TablePage = () => {
     const config = [
         {
             label: 'Name',
-            render: fruit => fruit.name
+            render: fruit => fruit.name,
+            sortValue: fruit => fruit.name
             
         },
         {
@@ -22,7 +24,9 @@ const TablePage = () => {
         },
         {
             label: 'Score',
-            render: fruit => fruit.score
+            render: fruit => fruit.score,
+            sortValue: (fruit) => fruit.score
+            //header: () => <th className="bg-red-500">Score</th>
             
         },
 
@@ -34,7 +38,7 @@ const TablePage = () => {
 
     return (
         <div>
-            <Table data={fruits} config={config} keyFn={keyFn}/>
+            <SortableTable data={fruits} config={config} keyFn={keyFn}/>
         </div>
     )
 }
